@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "public": true,
+    "builds": [
+      { "src": "tic_tac_toe.html", "use": "@vercel/static" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/tic_tac_toe.html" }
+    ]
+  }
