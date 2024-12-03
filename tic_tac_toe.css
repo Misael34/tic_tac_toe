@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #05ccf9;
+  }
+  
+  .game-container {
+    text-align: center;
+    background: #ff011a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(5, 104, 185, 0.972);
+  }
+  
+  h1 {
+    margin-bottom: 10px;
+  }
+  
+  #message {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background: #f4f4f4;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cell:hover {
+    background-color: #006aff;
+  }
+  
+  .cell.x {
+    color: #0059ff;
+  }
+  
+  .cell.o {
+    color: #FF6B6B;
+  }
+  
+  .restart-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .restart-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .restart-button:active {
+    transform: scale(0.95);
+  }
